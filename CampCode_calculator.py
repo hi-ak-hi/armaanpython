@@ -1,10 +1,10 @@
 try:
     number=int(input("enter a number: "))
-    operation=input("enter a, s, m,, d, s, or e : \n a is addition, \n s is subtraction, \n m is multiplication, \n d is division, \n s is square root, \n e is exponent: \n")
-    if operation=="s" or operation=="S" or operation=="Square Root" or operation=="square root":
+    operation=input("enter a, s, m,, d, sq, or e: \n a is addition, \n s is subtraction, \n m is multiplication, \n d is division, \n sq is square root, \n e is exponent: \n")
+    if operation=="sq" or operation=="SQ" or operation=="Square Root" or operation=="square root":
         answer=number**0.5
         print("the square root of",number,"is",answer)
-    elif operation != "s" or operation !="S" or operation != "Square Root" or operation != "square root":
+    elif operation=="a" or operation=="s" or operation=="m" or operation=="d" or operation=="e":
         number2=int(input("enter a number to add, subtract, multiply, or divide or make the exponent by the number you entered:")) 
         if operation=="a" or operation=="add" or operation=="addition":
             answer=number+number2
@@ -43,4 +43,4 @@ try:
                 newanswer=answer**number3
                 print(answer,"^",number3,"=",newanswer)
 except:
-    print("you didnt enter a number")
+    print("there was an error")
