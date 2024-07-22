@@ -6,7 +6,7 @@ guess=int(input("please guess a number from 1 to 100: "))
 while guess!=SecNum:
     if guess>=1 and guess<=100:
         if SecNum > guess:
-            print("guess higher")
+            print("guess higher")   
         if SecNum < guess:
             print("guess lower")
         guess=int(input("guess a new number: "))
