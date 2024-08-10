@@ -19,7 +19,7 @@ while count<49:
     col = int(input("what column do you want to go in(1 - 7): "))
     col -= 1
     row = spot[col]
-    spot[col]-=1
+    spot[col]-= 1
     board[row][col] = player
     if player == "[x]":
         player = "[o]"
