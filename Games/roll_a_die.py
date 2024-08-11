@@ -5,4 +5,4 @@ while True:
         die = random.randint(1,6)
         print(die)
     if roll == "no":
-        break 
+        break

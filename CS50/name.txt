@@ -1,2 +1,0 @@
-
-& C:/Users/armaa/AppData/Local/Microsoft/WindowsApps/python3.12.exe "g:/My Drive/Python/armaanpython/CS50/name.2.py"

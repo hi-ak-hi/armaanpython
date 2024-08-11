@@ -11,8 +11,3 @@ try:
     print("Good job sigma")
 except:
     print("YOU STPUID FALUIRE YOU DIDNT ENTER A NUMBER")
-        
-        
-    
-    
-    
