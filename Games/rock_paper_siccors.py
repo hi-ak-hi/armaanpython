@@ -1,9 +1,37 @@
 from sys import exit
 from getpass import getpass
-print("These are the directions:\n1. Player 1 will type rock, paper, or siccors - then player 2 will type the same\n2. Make sure you DON'T LOOK when the other person in typing\n3. Sit on opposite sides and hand the device to the other person when you are done\n4. What you type will not be shown to you for vewing, but don't worry its working.\nJust be careful what you type, because if you make a typo it'll crash.")
+from time import sleep
+print("These are the directions:")
+sleep(2)
+print("1. Player 1 will type rock, paper, or siccors - then player 2 will type the same")
+sleep(3)
+print("2. Make sure you DON'T LOOK when the other person in typing")
+sleep(3)
+print("3. Sit on opposite sides and hand the device to the other person when you are done")
+sleep(3)
+print("4. What you type will not be shown to you for vewing, but don't worry its working.")
+sleep(3)
+print("5. Be careful what you type, because if you make a typo it'll crash.")
+
+print("the game is starting...")
+sleep(1)
+print("5")
+sleep(1)
+print("4")
+sleep(1)
+print("3")
+sleep(1)
+print("2")
+sleep(1)
+print("1")
+sleep(1)
+print("")
+print("")
 while True:
-    game1=getpass("player 1, enter rock, paper, or siccors(make sure you type lowercase)")
-    game2=getpass("player 2, enter rock, paper, or siccors(make sure you type lowercase)")
+    game1=getpass("player 1, enter rock, paper, or siccors")
+    game2=getpass("player 2, enter rock, paper, or siccors")
+    game1 = game1.lower()
+    game2 = game2.lower()
     if game1=="rock" and game2=="siccors":
         exit("player 1 typed")
     if game1=="rock" and game2=="paper":
