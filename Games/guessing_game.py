@@ -1,14 +1,23 @@
 from random import randint
-guess = input("Guess(1 to 1 million): ")
-guess = guess.replace(",", "")
-guess = int(guess)
 random_num = randint(1, 1_000_000)
+def check(question):
+    while True:
+        global guess
+        guess = input(question)
+        try:
+            guess = guess.replace(",", "")
+            guess = int(guess)
+        except:
+            print("enter a number please")
+            continue
+        break
 
-while int(guess) != random_num:
-    if int(guess)>random_num:
+check("Guess a number between 1 and 1,000,000: ")
+while guess != random_num:
+    if guess>random_num:
         print("guess lower")
-    if int(guess)<random_num:
+    if guess<random_num:
         print("guess heigher")
-    guess = input("Guess again: ")
-    guess = guess.replace(",", "")
+    guess = input("> ")
+    check("> ")
 print("good job, you got it")

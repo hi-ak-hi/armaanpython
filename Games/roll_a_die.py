@@ -16,4 +16,6 @@ while roll.lower() == "yes":
         rolls.append(die)
         print(rolls[-2] + rolls[-1])
         count += 1
+    else:
+        print("ERROR")
 print("Done")

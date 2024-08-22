@@ -50,3 +50,5 @@ while True:
         print("you guys both entered paper")
     if game1=="siccors" and game2=="siccors":
         print("you guys both entered siccors")
+    else:
+        print("ERROR")

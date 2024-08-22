@@ -16,8 +16,12 @@ def printboard(board):
     print("3", board[2][0] + " |" + board[2][1] + " |" + board[2][2])
 while count < 9:
     printboard(board)
-    row = int(input("player "+player+" what row do you want to move in (1-3): "))
-    col = int(input("player "+player+" what column do you want to move in: (1-3): "))
+    try:
+        row = int(input("player " + player + " what row do you want to move in (1-3): "))
+        col = int(input("player " + player +  " what column do you want to move in: (1-3): "))
+    except ValueError:
+        print("ERROR")
+        continue
     if board[row-1][col-1] == " ":
         count += 1
         board[row-1][col-1] = player

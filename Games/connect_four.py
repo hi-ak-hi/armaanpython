@@ -16,7 +16,11 @@ def print_board(board):
 
 while count<49:
     print_board(board)
-    col = int(input("what column do you want to go in(1 - 7): "))
+    try:
+        col = int(input("what column do you want to go in(1 - 7): "))
+    except ValueError:
+        print("enter a number please")
+        continue
     col -= 1
     row = spot[col]
     if spot[row] == 0:
