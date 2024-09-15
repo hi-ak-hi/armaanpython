@@ -1,7 +1,7 @@
 board=[]
 for x in range(3):
     temp=[]
-    for a in range(3):
+    for y in range(3):
         temp.append(" ")
     board.append(temp)
 player = ("x")

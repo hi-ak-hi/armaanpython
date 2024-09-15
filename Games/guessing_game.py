@@ -1,4 +1,5 @@
 from random import randint
+import guessing_game
 random_num = randint(1, 1_000_000)
 def check(question):
     while True:
@@ -21,3 +22,6 @@ while guess != random_num:
     guess = input("> ")
     check("> ")
 print("good job, you got it")
+
+if __name__ == "__main__":
+    guessing_game.py

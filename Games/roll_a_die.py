@@ -1,5 +1,5 @@
 import random
-count = 0
+count = 0   
 rolls = []
 roll = "yes"
 while roll.lower() == "yes":

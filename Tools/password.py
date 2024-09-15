@@ -4,16 +4,14 @@ username=input("enter a username: ")
 password=getpass("enter a password: ")
 
 while True:
-    veiwing=input("do you want to see your password: ")
-    if veiwing=="yes" or veiwing=="Yes":
+    veiwing=input("do you want to see your password: ").lower()
+    if veiwing=="yes":
         print(password)
-        change=input("do you want to change it: ")
-        if change=="yes" or change=="Yes":
+        change=input("do you want to change it: ").lower()
+        if change=="yes":
             password=getpass("enter a password: ")
         
-    if veiwing=="no" or veiwing=="No":
+    if veiwing=="no":
         break
 
 print("ok, your all set,",username)
-
-        

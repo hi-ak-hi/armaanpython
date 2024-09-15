@@ -1,4 +1,3 @@
-from sys import exit
 from getpass import getpass
 from time import sleep
 print("These are the directions:")
@@ -23,19 +22,17 @@ print("3")
 sleep(1)
 print("2")
 sleep(1)
-print("1")
+print("1 \n\n")
 sleep(1)
-print("")
-print("")
 while True:
-    game1=getpass("player 1, enter rock, paper, or siccors")
-    game2=getpass("player 2, enter rock, paper, or siccors")
+    game1=getpass("player 1, enter rock, paper, or siccors: ")
+    game2=getpass("player 2, enter rock, paper, or siccors: ")
     game1 = game1.lower()
     game2 = game2.lower()
     if game1=="rock" and game2=="siccors":
-        exit("player 1 typed")
+        exit("player 1 won")
     if game1=="rock" and game2=="paper":
-        exit("player 2 typed")
+        exit("player 2 won")
     if game1=="siccors" and game2=="paper":
         exit("player 1 won")
     if game2=="rock" and game1=="siccors":
