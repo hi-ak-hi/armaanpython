@@ -1,6 +1,6 @@
 import os
-RED = "\033[31m" 
-YELLOW = "\033[33m" 
+RED = "\033[31m"
+YELLOW = "\033[33m"
 RESET = "\033[0m"
 board = []
 def clear_screen():
@@ -23,7 +23,11 @@ def print_board(board):
             print(board[x][y], end="")
         print()
 win = False
+clear1 = False
 while count < 49:
+    if not clear1:
+        clear_screen()
+        clear1 = True
     print_board(board)
     col = int(input(player2 + " what column do you want to go in(1 - 7): "))
     col -= 1
